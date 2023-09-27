@@ -57,34 +57,59 @@ body {
 .hero-container__image {
   max-height: 370px;
   width: 100%;
+  position: relative;
+  display: inline-block;
 }
-.about-the-musicians-container__header {
-  color: #323232;
+.hero-container__text {
+  z-index: 1;
+  position: absolute;
   padding-left: 16px;
-  font-size: 42px;
+  top: 32%;
+  text-align: center;
+  font-size: 32px;
   line-height: 32px;
   font-weight: 700;
 }
-.about-the-musicians-container__quote {
-  padding-right: 16px;
+
+.about-the-musicians-container__header {
+  color: #323232;
   padding-left: 16px;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.about-the-musicians-container__quote {
+  padding-left: 16px;
+  color: #323232;
 }
 .about-the-musicians-container__quote-author {
-  padding-right: 16px;
   padding-left: 16px;
+  color: #323232;
 }
 .about-the-musicians-container__band-name {
-  padding-right: 16px;
   padding-left: 16px;
 }
 .about-the-musicians-container__band-biography {
-  padding-right: 16px;
   padding-left: 16px;
+  line-height: 18px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #323232;
 }
 
 .photo-gallary-container__header {
-  padding-right: 16px;
+  color: #323232;
   padding-left: 16px;
+  padding-bottom: 16px;
+  padding-top: 20px;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  background-color: #FAFAFA;
 }
 
 .photo-gallary-container {
@@ -117,8 +142,7 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .footer-container {
   background-color: #323232;
@@ -161,6 +185,7 @@ body {
   padding-left: 16px;
   padding-top: 24px;
   color: #FFFFFF;
+  margin-top: 0px;
 }
 .footer-container__social-logos--facebook {
   padding-right: 16px;
@@ -181,6 +206,7 @@ body {
   line-height: 32px;
   font-size: 42px;
   margin-bottom: 0px;
+  margin-top: 64px;
   font-weight: 200;
   padding-right: 16px;
   padding-left: 16px;

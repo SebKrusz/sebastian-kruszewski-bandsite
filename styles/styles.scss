@@ -102,20 +102,39 @@ body {
 
 // NAV BAR ENDS HERE
 // HERO BEGINS HERE
+    .hero-container{
 
-    .hero-container__image {
-    max-height: 370px;
-    width: 100%;
-
-      @include tablet {
-
-      }
-      @include desktop { 
-
-      }
+      &__image {
+        max-height: 370px;
+        width: 100%;
+        position: relative;
+        display: inline-block;
       
-  
+    
+          @include tablet {
+    
+          }
+          @include desktop { 
+    
+          }
     }
+    
+    &__text {
+      z-index: 1;
+      position: absolute;
+      padding-left: 16px;
+      top: 32%;
+      text-align: center;
+      font-size: $mobile-page-section-header-ts ;
+      line-height: $mobile-page-section-header-lh ;
+      font-weight: $mobile-page-section-header-fw;
+     
+
+    }
+  
+  
+  }
+  
 
   
   
@@ -129,6 +148,8 @@ body {
   font-size: $mobile-page-section-header-ts ;
   line-height: $mobile-page-section-header-lh ;
   font-weight: $mobile-page-section-header-fw;
+  margin-top: 20px;
+  margin-bottom: 16px;
   
   
   @include tablet {
@@ -150,23 +171,26 @@ body {
   } 
 
   &__quote {
-  padding-right: 16px;
   padding-left: 16px;
+  color: $primary-color-bandsite-black;
   }
 
   &__quote-author {
-    padding-right: 16px;
     padding-left: 16px;
+    color: $primary-color-bandsite-black;
   }
 
   &__band-name {
-    padding-right: 16px;
     padding-left: 16px;
+    $mobile-subheader-fw: 600;
   }
 
   &__band-biography{
-    padding-right: 16px;
     padding-left: 16px;
+    line-height: $mobile-footer-body-lh;
+    font-size: $mobile-footer-body-ts;
+    font-weight: $mobile-footer-body-fw;
+    color: $primary-color-bandsite-black;
   }
 
 }
@@ -186,8 +210,16 @@ body {
   //  ABOUT THE MUSICIANS ENDS HERE
   // PHOTO GALLARY BEGINS HERE
 .photo-gallary-container__header {
-  padding-right: 16px;
+  color:$primary-color-bandsite-black;
   padding-left: 16px;
+  padding-bottom: 16px;
+  padding-top: 20px;
+  font-size: $mobile-page-section-header-ts ;
+  line-height: $mobile-page-section-header-lh ;
+  font-weight: $mobile-page-section-header-fw;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  background-color: #FAFAFA;
 }
 
 .photo-gallary-container {
@@ -217,8 +249,7 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     
     @include tablet {
 
@@ -286,7 +317,8 @@ body {
       padding-right: 16px;
       padding-left: 16px;
       padding-top: 24px;
-      color: $primary-color-white
+      color: $primary-color-white;
+      margin-top: 0px;
     }
 
     &__social-logos{
@@ -313,6 +345,7 @@ body {
       line-height: $mobile-page-section-header-lh;
       font-size: 42px;
       margin-bottom: 0px;
+      margin-top: 64px;
       font-weight: 200;
       padding-right: 16px;
       padding-left: 16px;
