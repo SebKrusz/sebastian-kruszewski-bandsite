@@ -123,22 +123,72 @@ body {
 .footer-container {
   background-color: #323232;
 }
-.footer-container__contact-header {
+.footer-container__person__name {
   margin-top: 0px;
   padding-top: 24px;
+  margin-bottom: 0px;
   padding-right: 16px;
   padding-left: 16px;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.footer-container__person_buisness {
+  margin-top: 0px;
+  padding-right: 16px;
+  padding-left: 16px;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+.footer-container__person_address {
+  padding-right: 16px;
+  padding-left: 16px;
+  color: #FFFFFF;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.footer-container__person_email {
+  padding-right: 16px;
+  padding-left: 16px;
+  color: #FFFFFF;
 }
 .footer-container__copyright-logo__header {
   margin-bottom: 0px;
   padding-right: 16px;
   padding-left: 16px;
 }
-.footer-container__hours-header {
+.footer-container__contact-header {
   padding-right: 16px;
   padding-left: 16px;
+  padding-top: 24px;
+  color: #FFFFFF;
 }
-.footer-container__social_text {
+.footer-container__social-logos--facebook {
   padding-right: 16px;
   padding-left: 16px;
+  width: 2%;
+}
+.footer-container__social-logos--twitter {
+  padding-right: 16px;
+  padding-left: 16px;
+  width: 4%;
+}
+.footer-container__social-logos--instagram {
+  padding-right: 16px;
+  padding-left: 16px;
+  width: 3%;
+}
+.footer-container__banner {
+  line-height: 32px;
+  font-size: 42px;
+  margin-bottom: 0px;
+  font-weight: 200;
+  padding-right: 16px;
+  padding-left: 16px;
+  color: #FFFFFF;
+}
+.footer-container__copyright {
+  padding-right: 16px;
+  padding-left: 16px;
+  color: #FFFFFF;
+  padding-bottom: 24px;
 }/*# sourceMappingURL=styles.css.map */

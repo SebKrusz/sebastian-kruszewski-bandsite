@@ -244,27 +244,88 @@ body {
 
   }
 
-    &__contact-header {
+    &__person__name {
       margin-top: 0px;
       padding-top: 24px;
+      margin-bottom: 0px;
       padding-right: 16px;
       padding-left: 16px;
+      color: $primary-color-white;
+      font-weight: $mobile-subheader-fw;
+    }
+    
+    &__person_buisness{
+      margin-top: 0px;
+      padding-right: 16px;
+      padding-left: 16px;
+      color: $primary-color-white;
+      font-weight: $mobile-subheader-fw;
     }
 
+    &__person_address{
+      padding-right: 16px;
+      padding-left: 16px;
+      color: $primary-color-white;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    
+    &__person_email{
+      padding-right: 16px;
+      padding-left: 16px;
+      color: $primary-color-white
+    }
+    
     &__copyright-logo__header {
       margin-bottom: 0px;
       padding-right: 16px;
       padding-left: 16px;
     }
 
-    &__hours-header{
+    &__contact-header{
       padding-right: 16px;
       padding-left: 16px;
+      padding-top: 24px;
+      color: $primary-color-white
     }
 
-    &__social_text{
+    &__social-logos{
+  
+    }
+
+    &__social-logos--facebook{
       padding-right: 16px;
       padding-left: 16px;
+      width: 2%;
     }
-}
+    &__social-logos--twitter{
+      padding-right: 16px;
+      padding-left: 16px;
+      width: 4%;
+    }
+    &__social-logos--instagram{
+      padding-right: 16px;
+      padding-left: 16px;
+      width: 3%;
+    }
+
+    &__banner{
+      line-height: $mobile-page-section-header-lh;
+      font-size: 42px;
+      margin-bottom: 0px;
+      font-weight: 200;
+      padding-right: 16px;
+      padding-left: 16px;
+      color: $primary-color-white
+
+    }
+  
+    &__copyright{
+      padding-right: 16px;
+      padding-left: 16px;
+      color: $primary-color-white;
+      padding-bottom: 24px;
+    }
+  
+  }
   
