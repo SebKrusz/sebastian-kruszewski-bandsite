@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Avenir ;
+    box-sizing: border-box;
   }
 
 
@@ -45,6 +46,9 @@ body {
     
     &__options {
       display: inline-flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
       @include tablet {
 
       }
@@ -100,7 +104,7 @@ body {
 // HERO BEGINS HERE
 
     .hero-container__image {
-    height: 66%;
+    max-height: 370px;
     width: 100%;
 
       @include tablet {
@@ -112,11 +116,79 @@ body {
       
   
     }
+
+  
   
   
   // HERO ENDS HERE
-  // PHOTO GALLARY BEGINS HERE
+  // ABOUT THE MUSICIANS STARTS HERE
 
+.about-the-musicians-container__header {
+  color:$primary-color-bandsite-black;
+  padding-left: 16px;
+  font-size: $mobile-page-section-header-ts ;
+  line-height: $mobile-page-section-header-lh ;
+  font-weight: $mobile-page-section-header-fw;
+  
+  
+  @include tablet {
+
+  }
+  @include desktop { 
+
+  }
+}
+
+.about-the-musicians-container{
+
+
+@include tablet {
+
+  }
+@include desktop { 
+
+  } 
+
+  &__quote {
+  padding-right: 16px;
+  padding-left: 16px;
+  }
+
+  &__quote-author {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  &__band-name {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  &__band-biography{
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+}
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  //  ABOUT THE MUSICIANS ENDS HERE
+  // PHOTO GALLARY BEGINS HERE
+.photo-gallary-container__header {
+  padding-right: 16px;
+  padding-left: 16px;
+}
 
 .photo-gallary-container {
   display: flex;
@@ -171,5 +243,28 @@ body {
   @include desktop { 
 
   }
+
+    &__contact-header {
+      margin-top: 0px;
+      padding-top: 24px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    &__copyright-logo__header {
+      margin-bottom: 0px;
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    &__hours-header{
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+
+    &__social_text{
+      padding-right: 16px;
+      padding-left: 16px;
+    }
 }
   

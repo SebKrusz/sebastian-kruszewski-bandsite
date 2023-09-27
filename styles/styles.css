@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Avenir;
+  box-sizing: border-box;
 }
 
 .nav-container__header {
@@ -32,6 +33,9 @@ body {
 }
 .nav-container__options {
   display: inline-flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
 }
 .nav-container__options__active-item {
   padding-left: 85px;
@@ -51,9 +55,38 @@ body {
   font-weight: 200;
 }
 .hero-container__image {
-  height: 66%;
+  max-height: 370px;
   width: 100%;
 }
+.about-the-musicians-container__header {
+  color: #323232;
+  padding-left: 16px;
+  font-size: 42px;
+  line-height: 32px;
+  font-weight: 700;
+}
+.about-the-musicians-container__quote {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.about-the-musicians-container__quote-author {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.about-the-musicians-container__band-name {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.about-the-musicians-container__band-biography {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.photo-gallary-container__header {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
 .photo-gallary-container {
   display: flex;
   flex-direction: column;
@@ -89,4 +122,23 @@ body {
 }
 .footer-container {
   background-color: #323232;
+}
+.footer-container__contact-header {
+  margin-top: 0px;
+  padding-top: 24px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.footer-container__copyright-logo__header {
+  margin-bottom: 0px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.footer-container__hours-header {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.footer-container__social_text {
+  padding-right: 16px;
+  padding-left: 16px;
 }/*# sourceMappingURL=styles.css.map */
