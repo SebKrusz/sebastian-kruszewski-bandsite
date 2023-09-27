@@ -25,6 +25,31 @@ body {
   width: 100%;
   color: #FFFFFF;
 }
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-container__options {
+  display: inline-flex;
+}
+.nav-container__options__active-item {
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 16px;
+  border-bottom: #FAFAFA 4px solid;
+  margin-bottom: 0px;
+}
+.nav-container__options__inactive-item {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+.nav-container__site-banner {
+  line-height: 32px;
+  font-size: 42px;
+  margin-bottom: 0px;
+  font-weight: 200;
+}
 .hero-container__image {
   height: 66%;
   width: 100%;
@@ -62,7 +87,6 @@ body {
   margin-top: 8px;
   margin-bottom: 8px;
 }
-
 .footer-container {
   background-color: #323232;
 }/*# sourceMappingURL=styles.css.map */

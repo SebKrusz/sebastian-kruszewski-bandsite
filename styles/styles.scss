@@ -12,15 +12,14 @@ body {
 
 
   // NAV BAR BEGINS HERE
-
-
   .nav-container__header {
     height: 150px;
     background-color: #323232;
     display: inline-block;
     width: 100%;
     color:$primary-color-white;
-    
+
+
     @include tablet {
 
     }
@@ -29,9 +28,73 @@ body {
     }
 
 }
+  
+  
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    @include tablet {
 
-   
+    }
+    @include desktop { 
 
+    }
+    
+    &__options {
+      display: inline-flex;
+      @include tablet {
+
+      }
+      @include desktop { 
+  
+      }
+    }
+
+      &__options__active-item {
+          padding-left: 85px;
+          padding-right: 85px;
+          padding-bottom: 16px;
+          border-bottom: #FAFAFA 4px solid;
+          margin-bottom: 0px;
+          @include tablet {
+
+          }
+          @include desktop { 
+      
+          }
+        }
+
+        &__options__inactive-item {
+          padding-left: 85px;
+          padding-right: 85px;
+          @include tablet {
+
+          }
+          @include desktop { 
+      
+          }
+        }
+  
+
+        &__site-banner {
+              line-height: $mobile-page-section-header-lh;
+              font-size: 42px;
+              margin-bottom: 0px;
+              font-weight: 200;
+          @include tablet {
+
+          }
+          @include desktop { 
+      
+          }
+
+        }
+  }
+
+  
 
 // NAV BAR ENDS HERE
 // HERO BEGINS HERE
@@ -84,7 +147,13 @@ body {
     display: flex;
     margin-top: 8px;
     margin-bottom: 8px;
+    
+    @include tablet {
 
+    }
+    @include desktop { 
+
+    }
   }
    
 }
