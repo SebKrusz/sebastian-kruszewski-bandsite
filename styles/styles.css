@@ -36,6 +36,11 @@ body {
   width: 100%;
   justify-content: space-evenly;
 }
+@media screen and (min-width: 768px) {
+  .nav-container__options {
+    width: 25%;
+  }
+}
 .nav-container__options__active-item {
   padding-bottom: 16px;
   border-bottom: #FAFAFA 4px solid;
@@ -95,6 +100,12 @@ body {
   display: flex;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .about-the-musicians-container__photo {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
 .about-the-musicians-container__quote {
   padding-left: 16px;
   color: #323232;
@@ -141,6 +152,9 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #FAFAFA;
+    padding-left: 28px;
+    padding-right: 28px;
+    justify-self: center;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -160,7 +174,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .photo-gallary-container__item {
-    width: 28%;
+    width: 25%;
     margin-top: 16px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;

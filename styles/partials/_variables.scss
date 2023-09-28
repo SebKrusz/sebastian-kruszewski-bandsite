@@ -44,28 +44,36 @@ $seconday-color-alabaster: #FAFAFA ;
 
 
 
-// // DESKTOP/TABLET SUBHEADER
-// $desktab-subheader-lh: 22px;
-// $desktab-subheader-ts: 22px;
-// $desktab-subheader-fw: 600;
+// DESKTOP/TABLET PAGE HEADER //
+$desktab-page-section-header-lh: 68px;
+$desktab-page-section-header-ts: 80px;
+$desktab-page-section-header-fw: 700;
+
+// DESKTOP/TABLET SECTION HEADER // 
+$desktab-page-section-header-lh: 44px;
+$desktab-page-section-header-ts: 43px;
+$desktab-page-section-header-fw: 700;
+
+//DESKTOP/TABLET SUBHEADER // 
+$desktab-subheader-lh: 32px;
+$desktab-subheader-ts: 38px;
+$desktab-subheader-fw: 700;
 
 
-// // DESKTOP/TABLET PAGE & SECTION HEADER
-// $desktab-page-section-header-lh: 32px;
-// $desktab-page-section-header-ts: 32px;
-// $desktab-page-section-header-fw: 700;
+//  DESKTOP/TABLET BODY // 
+$desktab-footer-body-lh: 22px;
+$desktab-footer-body-ts: 16px;
+$desktab-footer-body-fw: 700;
 
+// DESKTOP/TABLET FOOTER // 
+$desktab-footer-body-lh: 20px;
+$desktab-footer-body-ts: 18px;
+$desktab-footer-body-fw: 400;
 
-
-// //  DESKTOP/TABLET BODY & FOOTER
-// $desktab-footer-body-lh: 18px;
-// $desktab-footer-body-ts: 15px;
-// $desktab-footer-body-fw: 400;
-
-// // DESKTOP/TABLET LABELS AND BUTTONS
-// $desktab-labels-buttons-lh: 20px;
-// $desktab-labels-buttons-ts: 10px;
-// $desktab-labels-buttons-fw: 700;
+// DESKTOP/TABLET LABELS AND BUTTONS // 
+$desktab-labels-buttons-lh: 20px;
+$desktab-labels-buttons-ts: 12px;
+$desktab-labels-buttons-fw: 700;
 
 
 
