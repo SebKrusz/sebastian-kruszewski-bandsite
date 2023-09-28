@@ -20,7 +20,7 @@ body {
 }
 
 .nav-container__header {
-  height: 150px;
+  height: 125px;
   background-color: #323232;
   display: inline-block;
   width: 100%;
@@ -32,21 +32,22 @@ body {
   align-items: center;
 }
 .nav-container__options {
-  display: inline-flex;
+  display: flex;
   width: 100%;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .nav-container__options__active-item {
-  padding-left: 85px;
-  padding-right: 85px;
   padding-bottom: 16px;
   border-bottom: #FAFAFA 4px solid;
   margin-bottom: 0px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 .nav-container__options__inactive-item {
-  padding-left: 85px;
-  padding-right: 85px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 .nav-container__site-banner {
   line-height: 32px;
@@ -55,20 +56,26 @@ body {
   font-weight: 200;
 }
 .hero-container__image {
-  max-height: 370px;
-  width: 100%;
   position: relative;
-  display: inline-block;
+  background-image: url(../assets/images/hero-bio.jpg), linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  min-width: 100vw;
+  min-height: 328px;
 }
-.hero-container__text {
-  z-index: 1;
-  position: absolute;
+.hero-container__image__text {
+  padding-top: 148px;
   padding-left: 16px;
-  top: 32%;
-  text-align: center;
+  position: relative;
   font-size: 32px;
   line-height: 32px;
-  font-weight: 700;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-top: 0px;
 }
 
 .about-the-musicians-container__header {
@@ -78,6 +85,14 @@ body {
   line-height: 32px;
   font-weight: 700;
   margin-top: 20px;
+  margin-bottom: 16px;
+}
+.about-the-musicians-container__photo {
+  width: 95%;
+  height: 35%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
   margin-bottom: 16px;
 }
 .about-the-musicians-container__quote {
@@ -98,7 +113,11 @@ body {
   font-weight: 400;
   color: #323232;
 }
-
+@media screen and (min-width: 768px) {
+  .about-the-musicians-container__band-biography {
+    display: flex;
+  }
+}
 .photo-gallary-container__header {
   color: #323232;
   padding-left: 16px;
@@ -111,12 +130,9 @@ body {
   margin-bottom: 0px;
   background-color: #FAFAFA;
 }
-
 .photo-gallary-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #FAFAFA;
   width: 100%;
 }
@@ -124,9 +140,7 @@ body {
   .photo-gallary-container {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    background: green;
+    background-color: #FAFAFA;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -144,8 +158,34 @@ body {
   display: flex;
   margin-bottom: 16px;
 }
+@media screen and (min-width: 768px) {
+  .photo-gallary-container__item {
+    width: 28%;
+    margin-top: 16px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .social-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-evenly;
+  }
+}
 .footer-container {
   background-color: #323232;
+}
+@media screen and (min-width: 768px) {
+  .footer-container__contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
 }
 .footer-container__person__name {
   margin-top: 0px;
@@ -183,24 +223,47 @@ body {
 .footer-container__contact-header {
   padding-right: 16px;
   padding-left: 16px;
-  padding-top: 24px;
+  padding-top: 30px;
   color: #FFFFFF;
   margin-top: 0px;
+}
+@media screen and (min-width: 768px) {
+  .footer-container__contact-header {
+    padding-left: 36px;
+  }
 }
 .footer-container__social-logos--facebook {
   padding-right: 16px;
   padding-left: 16px;
-  width: 2%;
+  width: 2.5vw;
+}
+@media screen and (min-width: 768px) {
+  .footer-container__social-logos--facebook {
+    padding-top: 30px;
+    width: 1.8vw;
+  }
 }
 .footer-container__social-logos--twitter {
   padding-right: 16px;
   padding-left: 16px;
-  width: 4%;
+  width: 5vw;
+}
+@media screen and (min-width: 768px) {
+  .footer-container__social-logos--twitter {
+    padding-top: 30px;
+    width: 3.6vw;
+  }
 }
 .footer-container__social-logos--instagram {
   padding-right: 16px;
   padding-left: 16px;
-  width: 3%;
+  width: 4vw;
+}
+@media screen and (min-width: 768px) {
+  .footer-container__social-logos--instagram {
+    padding-top: 30px;
+    width: 3vw;
+  }
 }
 .footer-container__banner {
   line-height: 32px;
@@ -217,4 +280,9 @@ body {
   padding-left: 16px;
   color: #FFFFFF;
   padding-bottom: 24px;
+}
+@media screen and (min-width: 768px) {
+  .footer-container__copyright {
+    padding-left: 36px;
+  }
 }/*# sourceMappingURL=styles.css.map */

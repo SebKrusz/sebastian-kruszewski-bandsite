@@ -14,7 +14,7 @@ body {
 
   // NAV BAR BEGINS HERE
   .nav-container__header {
-    height: 150px;
+    height: 125px;
     background-color: #323232;
     display: inline-block;
     width: 100%;
@@ -22,6 +22,7 @@ body {
 
 
     @include tablet {
+  
 
     }
     @include desktop { 
@@ -45,10 +46,9 @@ body {
     }
     
     &__options {
-      display: inline-flex;
+      display:flex;
       width: 100%;
-      align-items: center;
-      justify-content: space-around;
+      justify-content: space-evenly;
       @include tablet {
 
       }
@@ -58,11 +58,12 @@ body {
     }
 
       &__options__active-item {
-          padding-left: 85px;
-          padding-right: 85px;
           padding-bottom: 16px;
           border-bottom: #FAFAFA 4px solid;
           margin-bottom: 0px;
+          width: 50%;
+          display: flex;
+          justify-content: center;
           @include tablet {
 
           }
@@ -72,8 +73,9 @@ body {
         }
 
         &__options__inactive-item {
-          padding-left: 85px;
-          padding-right: 85px;
+          width: 50%;
+          display: flex;
+          justify-content: center;
           @include tablet {
 
           }
@@ -103,37 +105,49 @@ body {
 // NAV BAR ENDS HERE
 // HERO BEGINS HERE
     .hero-container{
-
-      &__image {
-        max-height: 370px;
-        width: 100%;
-        position: relative;
-        display: inline-block;
       
-    
-          @include tablet {
-    
-          }
-          @include desktop { 
-    
-          }
-    }
-    
-    &__text {
-      z-index: 1;
-      position: absolute;
-      padding-left: 16px;
-      top: 32%;
-      text-align: center;
-      font-size: $mobile-page-section-header-ts ;
-      line-height: $mobile-page-section-header-lh ;
-      font-weight: $mobile-page-section-header-fw;
-     
+      
+      // &__image--text {  
+      //   padding-left: 16px;
+      //   font-size: $mobile-page-section-header-ts ;
+      //   line-height: $mobile-page-section-header-lh ;
+      //   font-weight: $mobile-page-section-header-fw;
+      //   color: blue;
+      //  position: absolute;
+      // }
 
+      &__image{
+        position: relative;
+        // display: flex;
+        background-image: url(../assets/images/hero-bio.jpg), linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5));
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        min-width: 100vw;
+        min-height: 328px;
+      }
+    
+      &__image__text{
+        padding-top: 148px;
+        padding-left: 16px;
+        position: relative;
+        font-size: $mobile-page-section-header-ts ;
+        line-height: $mobile-page-section-header-lh ;
+        font-weight: 600;
+        color: $primary-color-white;
+        margin-top: 0px;
+      
+      
+      }
+    
     }
+    
+ 
   
   
-  }
   
 
   
@@ -170,6 +184,23 @@ body {
 
   } 
 
+  &__photo {
+    width: 95%;
+    height: 35%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    margin-bottom: 16px;
+    @include tablet {
+
+    }
+  @include desktop { 
+  
+    } 
+ 
+
+  }
+
   &__quote {
   padding-left: 16px;
   color: $primary-color-bandsite-black;
@@ -191,18 +222,34 @@ body {
     font-size: $mobile-footer-body-ts;
     font-weight: $mobile-footer-body-fw;
     color: $primary-color-bandsite-black;
+    @include tablet {
+      display: flex;
+
+    }
+  @include desktop { 
+  
+    } 
   }
+
+&__paragraph{
+  
+  
+  @include tablet {
+
+
+  }
+@include desktop { 
+
+  } 
+
+
+
+}
 
 }
 
 
 
-  
-  
-  
-  
-  
-  
   
   
   
@@ -220,22 +267,27 @@ body {
   margin-top: 20px;
   margin-bottom: 0px;
   background-color: #FAFAFA;
+  @include tablet {
+  
+
+  }
+@include desktop { 
+
+  } 
+
 }
 
 .photo-gallary-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #FAFAFA;
   width: 100%;
      
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    background: green;
+    background-color: #FAFAFA;
+
   }
   @include desktop { 
     width: 30%;
@@ -252,6 +304,10 @@ body {
     margin-bottom: 16px;
     
     @include tablet {
+      width: 28%;
+      margin-top: 16px;
+      padding-left: .5rem;
+      padding-right: .5rem;
 
     }
     @include desktop { 
@@ -264,16 +320,48 @@ body {
   
 // PHOTO GALLARY ENDS HERE
 // FOOTER BEGINS HERE
-
-.footer-container {
-  background-color: #323232;
-  
+.social-container {
   @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;;
+    align-content: space-evenly;
 
   }
   @include desktop { 
 
   }
+}
+
+
+
+.footer-container {
+  background-color: #323232;
+  
+  @include tablet {
+    
+
+  }
+  @include desktop { 
+
+  }
+
+  &__contacts {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-content: space-evenly;
+
+    }
+    @include desktop { 
+  
+    }
+    
+  }
+
 
     &__person__name {
       margin-top: 0px;
@@ -312,13 +400,22 @@ body {
       padding-right: 16px;
       padding-left: 16px;
     }
+    
 
     &__contact-header{
       padding-right: 16px;
       padding-left: 16px;
-      padding-top: 24px;
+      padding-top: 30px;
       color: $primary-color-white;
       margin-top: 0px;
+      @include tablet {
+      padding-left: 36px;
+
+      }
+      @include desktop { 
+    
+      }
+    
     }
 
     &__social-logos{
@@ -328,17 +425,45 @@ body {
     &__social-logos--facebook{
       padding-right: 16px;
       padding-left: 16px;
-      width: 2%;
+      width: 2.5vw;
+      @include tablet {
+        padding-top: 30px;
+        width: 1.8vw;
+    
+
+      }
+      @include desktop { 
+    
+      }
+    
     }
     &__social-logos--twitter{
       padding-right: 16px;
       padding-left: 16px;
-      width: 4%;
+      width: 5vw;
+      @include tablet {
+        padding-top: 30px;
+        width: 3.6vw;
+    
+
+      }
+      @include desktop { 
+    
+      }
     }
     &__social-logos--instagram{
       padding-right: 16px;
       padding-left: 16px;
-      width: 3%;
+      width: 4vw;
+      @include tablet {
+        padding-top: 30px;
+        width: 3vw;
+    
+
+      }
+      @include desktop { 
+    
+      }
     }
 
     &__banner{
@@ -358,6 +483,14 @@ body {
       padding-left: 16px;
       color: $primary-color-white;
       padding-bottom: 24px;
+      @include tablet {
+        padding-left: 36px;
+
+      }
+      @include desktop { 
+    
+      }
+    
     }
   
   }
