@@ -97,7 +97,7 @@ main {
   }
 }
 
-.hero-container__image {
+.hero__image {
   position: relative;
   background-image: url(../assets/images/hero-bio.jpg), linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5));
   background-blend-mode: overlay;
@@ -109,7 +109,7 @@ main {
   min-width: 100vw;
   min-height: 36vw;
 }
-.hero-container__image__text {
+.hero__image__text {
   padding-top: 15%;
   padding-left: 1rem;
   position: relative;
@@ -120,7 +120,7 @@ main {
   margin-top: 0px;
 }
 @media screen and (min-width: 768px) {
-  .hero-container__image__text {
+  .hero__image__text {
     font-size: 56px;
     line-height: 68px;
     font-weight: 700;
@@ -322,7 +322,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  .social-container {
+  .social-media {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -331,12 +331,12 @@ main {
   }
 }
 
-.footer-container {
+.footer {
   background-color: #323232;
   position: relative;
 }
 @media screen and (min-width: 768px) {
-  .footer-container__contacts {
+  .footer__contacts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -345,42 +345,42 @@ main {
   }
 }
 @media screen and (min-width: 1024px) {
-  .footer-container__contacts {
+  .footer__contacts {
     padding-left: 5.3125rem;
     justify-content: flex-start;
     gap: 6vw;
   }
 }
-.footer-container__person {
+.footer__person {
   padding-right: 1rem;
   padding-left: 1rem;
 }
-.footer-container__person__name {
+.footer__person__name {
   margin-top: 0px;
   padding-top: 1.5rem;
   margin-bottom: 0px;
   color: #FFFFFF;
   font-weight: 600;
 }
-.footer-container__person_buisness {
+.footer__person_buisness {
   margin-top: 0px;
   color: #FFFFFF;
   font-weight: 600;
 }
-.footer-container__person_address {
+.footer__person_address {
   color: #FFFFFF;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.footer-container__person_email {
+.footer__person_email {
   color: #FFFFFF;
 }
-.footer-container__copyright-logo__header {
+.footer__copyright-logo__header {
   margin-bottom: 0px;
   padding-right: 1rem;
   padding-left: 1rem;
 }
-.footer-container__contact-header {
+.footer__contact-header {
   padding-right: 1rem;
   padding-left: 1rem;
   padding-top: 1.875rem;
@@ -388,12 +388,12 @@ main {
   margin-top: 0px;
 }
 @media screen and (min-width: 768px) {
-  .footer-container__contact-header {
+  .footer__contact-header {
     padding-left: 2.25rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .footer-container__contact-header {
+  .footer__contact-header {
     font-size: 43px;
     line-height: 44px;
     font-weight: 700;
@@ -401,63 +401,63 @@ main {
     padding-top: 3.75rem;
   }
 }
-.footer-container__social-logos--facebook {
+.footer__social-logos--facebook {
   padding-right: 1rem;
   padding-left: 1rem;
   width: 2.5vw;
 }
 @media screen and (min-width: 768px) {
-  .footer-container__social-logos--facebook {
+  .footer__social-logos--facebook {
     padding-top: 1.875rem;
     width: 1.8vw;
   }
 }
 @media screen and (min-width: 1024px) {
-  .footer-container__social-logos--facebook {
+  .footer__social-logos--facebook {
     width: 1.2vw;
   }
 }
-.footer-container__social-logos--twitter {
+.footer__social-logos--twitter {
   padding-right: 1rem;
   padding-left: 1rem;
   width: 5vw;
 }
 @media screen and (min-width: 768px) {
-  .footer-container__social-logos--twitter {
+  .footer__social-logos--twitter {
     padding-top: 1.875rem;
     width: 3.6vw;
   }
 }
 @media screen and (min-width: 1024px) {
-  .footer-container__social-logos--twitter {
+  .footer__social-logos--twitter {
     width: 2.2vw;
   }
 }
-.footer-container__social-logos--instagram {
+.footer__social-logos--instagram {
   padding-right: 1rem;
   padding-left: 1rem;
   width: 4vw;
 }
 @media screen and (min-width: 768px) {
-  .footer-container__social-logos--instagram {
+  .footer__social-logos--instagram {
     padding-top: 1.875rem;
     width: 3vw;
   }
 }
 @media screen and (min-width: 1024px) {
-  .footer-container__social-logos--instagram {
+  .footer__social-logos--instagram {
     width: 1.8vw;
     padding-left: 2.8125rem;
   }
 }
-.footer-container__banner {
+.footer__banner {
   margin-bottom: 0px;
   margin-top: 64px;
   padding-right: 1rem;
   padding-left: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .footer-container__banner {
+  .footer__banner {
     position: absolute;
     left: 73%;
     height: 5vh;
@@ -467,26 +467,26 @@ main {
   }
 }
 @media screen and (min-width: 1024px) {
-  .footer-container__banner {
+  .footer__banner {
     height: 5vh;
     width: 10%;
     top: 16%;
   }
 }
-.footer-container__copyright {
+.footer__copyright {
   padding-right: 1rem;
   padding-left: 1rem;
   color: #FFFFFF;
   padding-bottom: 1.5rem;
 }
 @media screen and (min-width: 768px) {
-  .footer-container__copyright {
+  .footer__copyright {
     padding-left: 2.25rem;
     margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .footer-container__copyright {
+  .footer__copyright {
     padding-left: 5vw;
   }
 }/*# sourceMappingURL=styles.css.map */
