@@ -19,47 +19,84 @@ body {
   box-sizing: border-box;
 }
 
-.nav-container__header {
-  height: 125px;
+main {
+  box-sizing: border-box;
+}
+
+.nav__header {
+  height: 7.8125rem;
   background-color: #323232;
   display: inline-block;
   width: 100%;
   color: #FFFFFF;
 }
-.nav-container {
+@media screen and (min-width: 768px) {
+  .nav__header {
+    height: 5.3125rem;
+  }
+}
+
+.nav {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.nav-container__options {
+.nav__options {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
 }
 @media screen and (min-width: 768px) {
-  .nav-container__options {
+  .nav__options {
     width: 25%;
+    padding-right: 4.6875rem;
   }
 }
-.nav-container__options__active-item {
-  padding-bottom: 16px;
+@media screen and (min-width: 1024px) {
+  .nav__options {
+    padding-right: 18.75rem;
+  }
+}
+.nav__options--active {
+  padding-bottom: 1rem;
   border-bottom: #FAFAFA 4px solid;
   margin-bottom: 0px;
   width: 50%;
   display: flex;
   justify-content: center;
 }
-.nav-container__options__inactive-item {
+@media screen and (min-width: 768px) {
+  .nav__options--active {
+    padding-top: 1.5625rem;
+    padding-bottom: 1.3125rem;
+  }
+}
+.nav__options--inactive {
   width: 50%;
   display: flex;
   justify-content: center;
 }
-.nav-container__site-banner {
-  line-height: 32px;
-  font-size: 42px;
-  margin-bottom: 0px;
-  font-weight: 200;
+@media screen and (min-width: 768px) {
+  .nav__options--inactive {
+    padding-top: 1.5625rem;
+  }
 }
+.nav__site-banner {
+  padding-top: 2.1875rem;
+  padding-bottom: 0.9375rem;
+  padding-left: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__site-banner {
+    align-self: start;
+    position: absolute;
+    height: 3%;
+    width: 16%;
+    margin: 1rem;
+    padding-top: 1.25rem;
+  }
+}
+
 .hero-container__image {
   position: relative;
   background-image: url(../assets/images/hero-bio.jpg), linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5));
@@ -70,11 +107,11 @@ body {
   margin-bottom: 0px;
   margin-top: 0px;
   min-width: 100vw;
-  min-height: 328px;
+  min-height: 36vw;
 }
 .hero-container__image__text {
-  padding-top: 148px;
-  padding-left: 16px;
+  padding-top: 15%;
+  padding-left: 1rem;
   position: relative;
   font-size: 32px;
   line-height: 32px;
@@ -82,221 +119,374 @@ body {
   color: #FFFFFF;
   margin-top: 0px;
 }
+@media screen and (min-width: 768px) {
+  .hero-container__image__text {
+    font-size: 56px;
+    line-height: 68px;
+    font-weight: 700;
+    padding-left: 3rem;
+  }
+}
 
 .about-the-musicians-container__header {
   color: #323232;
-  padding-left: 16px;
+  padding-left: 1rem;
   font-size: 32px;
   line-height: 32px;
   font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 16px;
-}
-.about-the-musicians-container__photo {
-  width: 95%;
-  height: 35%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: flex;
-  margin-bottom: 16px;
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .about-the-musicians-container__photo {
-    padding-left: 36px;
-    padding-right: 36px;
+  .about-the-musicians-container__header {
+    font-size: 43px;
+    line-height: 44px;
+    font-weight: 700;
+    padding-left: 3rem;
   }
 }
-.about-the-musicians-container__quote {
-  padding-left: 16px;
+@media screen and (min-width: 1024px) {
+  .about-the-musicians-container__header {
+    margin-bottom: 4.125rem;
+    margin-top: 2.75rem;
+  }
+}
+
+.about-the-musicians {
+  display: grid;
+}
+.about-the-musicians__photo {
+  width: 95%;
+  height: 100%;
+  padding-left: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about-the-musicians__photo {
+    display: flex;
+    padding-left: 7.8125rem;
+    width: 72%;
+    align-self: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-the-musicians__photo {
+    width: 85%;
+  }
+}
+.about-the-musicians__quote {
+  padding-left: 1rem;
   color: #323232;
 }
-.about-the-musicians-container__quote-author {
-  padding-left: 16px;
+@media screen and (min-width: 768px) {
+  .about-the-musicians__quote {
+    padding-left: 7.8125rem;
+    padding-right: 9.5625rem;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+.about-the-musicians__quote-author {
+  padding-left: 1rem;
   color: #323232;
 }
-.about-the-musicians-container__band-name {
-  padding-left: 16px;
+@media screen and (min-width: 768px) {
+  .about-the-musicians__quote-author {
+    padding-left: 7.8125rem;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 1rem;
+  }
 }
-.about-the-musicians-container__band-biography {
-  padding-left: 16px;
+.about-the-musicians__band-name {
+  padding-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .about-the-musicians__band-name {
+    padding-left: 7.8125rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+.about-the-musicians__band-biography {
+  padding-left: 1rem;
   line-height: 18px;
   font-size: 15px;
   font-weight: 400;
   color: #323232;
 }
 @media screen and (min-width: 768px) {
-  .about-the-musicians-container__band-biography {
+  .about-the-musicians__band-biography {
     display: flex;
+    padding-left: 7.8125rem;
+    padding-right: 11.5625rem;
   }
 }
-.photo-gallary-container__header {
+@media screen and (min-width: 768px) {
+  .about-the-musicians__paragraph--left {
+    padding-right: 1.25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-the-musicians__paragraph--left {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-the-musicians__paragraph--right {
+    font-size: 1.125rem;
+  }
+}
+
+.photo-gallery__header {
   color: #323232;
-  padding-left: 16px;
-  padding-bottom: 16px;
-  padding-top: 20px;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1.25rem;
   font-size: 32px;
   line-height: 32px;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   margin-bottom: 0px;
   background-color: #FAFAFA;
 }
-.photo-gallary-container {
+@media screen and (min-width: 768px) {
+  .photo-gallery__header {
+    font-size: 43px;
+    line-height: 44px;
+    font-weight: 700;
+    padding-left: 3rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .photo-gallery__header {
+    padding-left: 7%;
+  }
+}
+
+.photo-gallery-container {
   display: flex;
   flex-direction: column;
   background-color: #FAFAFA;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .photo-gallary-container {
+  .photo-gallery-container {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #FAFAFA;
-    padding-left: 28px;
-    padding-right: 28px;
     justify-self: center;
+    justify-content: center;
+    gap: 1.5rem;
   }
 }
 @media screen and (min-width: 1024px) {
-  .photo-gallary-container {
-    width: 30%;
-    margin: 1.25vw 0;
-    background: lightpink;
+  .photo-gallery-container {
+    gap: 1.875rem;
+    background: #FAFAFA;
   }
 }
-.photo-gallary-container__item {
+
+.photo-gallery__item {
   width: 95%;
   height: 35%;
   padding-left: 1rem;
   padding-right: 1rem;
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .photo-gallary-container__item {
-    width: 25%;
-    margin-top: 16px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  .photo-gallery__item {
+    width: 28%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-bottom: 0px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .photo-gallery__item--bottom {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .photo-gallery__item--bottom {
+    margin-bottom: 3rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .social-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: space-evenly;
+    align-items: center;
   }
 }
+
 .footer-container {
   background-color: #323232;
+  position: relative;
 }
 @media screen and (min-width: 768px) {
   .footer-container__contacts {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: space-evenly;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer-container__contacts {
+    padding-left: 5.3125rem;
+    justify-content: flex-start;
+    gap: 6vw;
+  }
+}
+.footer-container__person {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 .footer-container__person__name {
   margin-top: 0px;
-  padding-top: 24px;
+  padding-top: 1.5rem;
   margin-bottom: 0px;
-  padding-right: 16px;
-  padding-left: 16px;
   color: #FFFFFF;
   font-weight: 600;
 }
 .footer-container__person_buisness {
   margin-top: 0px;
-  padding-right: 16px;
-  padding-left: 16px;
   color: #FFFFFF;
   font-weight: 600;
 }
 .footer-container__person_address {
-  padding-right: 16px;
-  padding-left: 16px;
   color: #FFFFFF;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 .footer-container__person_email {
-  padding-right: 16px;
-  padding-left: 16px;
   color: #FFFFFF;
 }
 .footer-container__copyright-logo__header {
   margin-bottom: 0px;
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 .footer-container__contact-header {
-  padding-right: 16px;
-  padding-left: 16px;
-  padding-top: 30px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 1.875rem;
   color: #FFFFFF;
   margin-top: 0px;
 }
 @media screen and (min-width: 768px) {
   .footer-container__contact-header {
-    padding-left: 36px;
+    padding-left: 2.25rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-container__contact-header {
+    font-size: 43px;
+    line-height: 44px;
+    font-weight: 700;
+    padding-left: 5vw;
+    padding-top: 3.75rem;
   }
 }
 .footer-container__social-logos--facebook {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   width: 2.5vw;
 }
 @media screen and (min-width: 768px) {
   .footer-container__social-logos--facebook {
-    padding-top: 30px;
+    padding-top: 1.875rem;
     width: 1.8vw;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer-container__social-logos--facebook {
+    width: 1.2vw;
+  }
+}
 .footer-container__social-logos--twitter {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   width: 5vw;
 }
 @media screen and (min-width: 768px) {
   .footer-container__social-logos--twitter {
-    padding-top: 30px;
+    padding-top: 1.875rem;
     width: 3.6vw;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer-container__social-logos--twitter {
+    width: 2.2vw;
+  }
+}
 .footer-container__social-logos--instagram {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   width: 4vw;
 }
 @media screen and (min-width: 768px) {
   .footer-container__social-logos--instagram {
-    padding-top: 30px;
+    padding-top: 1.875rem;
     width: 3vw;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer-container__social-logos--instagram {
+    width: 1.8vw;
+    padding-left: 2.8125rem;
+  }
+}
 .footer-container__banner {
-  line-height: 32px;
-  font-size: 42px;
   margin-bottom: 0px;
   margin-top: 64px;
-  font-weight: 200;
-  padding-right: 16px;
-  padding-left: 16px;
-  color: #FFFFFF;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .footer-container__banner {
+    position: absolute;
+    left: 73%;
+    height: 5vh;
+    width: 16%;
+    top: 10%;
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-container__banner {
+    height: 5vh;
+    width: 10%;
+    top: 16%;
+  }
 }
 .footer-container__copyright {
-  padding-right: 16px;
-  padding-left: 16px;
+  padding-right: 1rem;
+  padding-left: 1rem;
   color: #FFFFFF;
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .footer-container__copyright {
-    padding-left: 36px;
+    padding-left: 2.25rem;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer-container__copyright {
+    padding-left: 5vw;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -6,25 +6,25 @@ $desktop-breakpoint: 1024px;
 
 // MOBILE SUBHEADER
 $mobile-subheader-lh: 22px;
-$mobile-subheader-ts: 22px;
+$mobile-subheader-fs: 22px;
 $mobile-subheader-fw: 600;
 
 
 // MOBILE PAGE & SECTION HEADER
 $mobile-page-section-header-lh: 32px;
-$mobile-page-section-header-ts: 32px;
+$mobile-page-section-header-fs: 32px;
 $mobile-page-section-header-fw: 700;
 
 
 
 //  MOBILE BODY & FOOTER
 $mobile-footer-body-lh: 18px;
-$mobile-footer-body-ts: 15px;
+$mobile-footer-body-fs: 15px;
 $mobile-footer-body-fw: 400;
 
 // MOBILE LABELS AND BUTTONS
 $mobile-labels-buttons-lh: 20px;
-$mobile-labels-buttons-ts: 10px;
+$mobile-labels-buttons-fs: 10px;
 $mobile-labels-buttons-fw: 700;
 
 
@@ -45,34 +45,34 @@ $seconday-color-alabaster: #FAFAFA ;
 
 
 // DESKTOP/TABLET PAGE HEADER //
-$desktab-page-section-header-lh: 68px;
-$desktab-page-section-header-ts: 80px;
-$desktab-page-section-header-fw: 700;
+$desktab-page-header-lh: 68px;
+$desktab-page-header-fs: 56px;
+$desktab-page-header-fw: 700;
 
 // DESKTOP/TABLET SECTION HEADER // 
-$desktab-page-section-header-lh: 44px;
-$desktab-page-section-header-ts: 43px;
-$desktab-page-section-header-fw: 700;
+$desktab-section-header-lh: 44px;
+$desktab-section-header-fs: 43px;
+$desktab-section-header-fw: 700;
 
 //DESKTOP/TABLET SUBHEADER // 
 $desktab-subheader-lh: 32px;
-$desktab-subheader-ts: 38px;
+$desktab-subheader-fs: 24px;
 $desktab-subheader-fw: 700;
 
 
 //  DESKTOP/TABLET BODY // 
 $desktab-footer-body-lh: 22px;
-$desktab-footer-body-ts: 16px;
+$desktab-footer-body-fs: 16px;
 $desktab-footer-body-fw: 700;
 
 // DESKTOP/TABLET FOOTER // 
 $desktab-footer-body-lh: 20px;
-$desktab-footer-body-ts: 18px;
+$desktab-footer-body-fs: 18px;
 $desktab-footer-body-fw: 400;
 
 // DESKTOP/TABLET LABELS AND BUTTONS // 
 $desktab-labels-buttons-lh: 20px;
-$desktab-labels-buttons-ts: 12px;
+$desktab-labels-buttons-fs: 12px;
 $desktab-labels-buttons-fw: 700;
 
 
@@ -107,10 +107,10 @@ $mobile-page-section-header-lh: 32px;
 
 
 // MOBILE TEXTSIZE SHORTHANDS START HERE
-$mobile-footer-body-ts: 15px;
-$mobile-labels-buttons-ts: 10px;
-$mobile-subheader-ts: 22px;
-$mobile-page-section-header-ts: 32px;
+$mobile-footer-body-fs: 15px;
+$mobile-labels-buttons-fs: 10px;
+$mobile-subheader-fs: 22px;
+$mobile-page-section-header-fs: 32px;
 // $mobile-
 // $mobile-
 

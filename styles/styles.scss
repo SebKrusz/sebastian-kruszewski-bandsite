@@ -1,6 +1,6 @@
-@use 'partials/variables' as *;
-@use 'partials/mixins' as *;
-@use 'partials/fonts' as *;
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+@use './partials/fonts' as *;
 
 
 
@@ -11,115 +11,95 @@ body {
     box-sizing: border-box;
   }
 
+  main {
+    box-sizing: border-box;
+  }
 
   // NAV BAR BEGINS HERE
-  .nav-container__header {
-    height: 125px;
+  .nav__header {
+    height: 7.8125rem;
     background-color: #323232;
     display: inline-block;
     width: 100%;
     color:$primary-color-white;
-
-
     @include tablet {
+      height: 5.3125rem;
   
-
     }
-    @include desktop { 
-
-    }
-
 }
   
   
-  .nav-container {
+  .nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-    @include tablet {
-
-    }
-    @include desktop { 
-
-    }
-    
     &__options {
       display:flex;
       width: 100%;
       justify-content: space-evenly;
       @include tablet {
-          width:25%
+          width:25%;
+          padding-right: 4.6875rem;
 
       }
       @include desktop { 
+        padding-right: 18.75rem;
   
       }
     }
 
-      &__options__active-item {
-          padding-bottom: 16px;
+      &__options--active {
+          padding-bottom: 1rem;
           border-bottom: #FAFAFA 4px solid;
           margin-bottom: 0px;
           width: 50%;
           display: flex;
           justify-content: center;
           @include tablet {
-
-          }
-          @include desktop { 
-      
+            padding-top:1.5625rem;
+            padding-bottom: 1.3125rem;
+          
           }
         }
 
-        &__options__inactive-item {
+        &__options--inactive {
           width: 50%;
           display: flex;
           justify-content: center;
           @include tablet {
-
-          }
-          @include desktop { 
-      
+            padding-top:1.5625rem;
+          
           }
         }
   
 
         &__site-banner {
-              line-height: $mobile-page-section-header-lh;
-              font-size: 42px;
-              margin-bottom: 0px;
-              font-weight: 200;
+          padding-top: 2.1875rem;
+          padding-bottom: 0.9375rem;
+          padding-left: 3rem;
           @include tablet {
+          align-self: start;
+          position: absolute;
+          height: 3%;
+          width: 16%;
+          margin: 1rem;
+          padding-top:1.25rem;
 
           }
-          @include desktop { 
-      
-          }
-
-        }
   }
-
-  
+}
 
 // NAV BAR ENDS HERE
+
+
 // HERO BEGINS HERE
-    .hero-container{
+   
+
+    .hero{
       
-      
-      // &__image--text {  
-      //   padding-left: 16px;
-      //   font-size: $mobile-page-section-header-ts ;
-      //   line-height: $mobile-page-section-header-lh ;
-      //   font-weight: $mobile-page-section-header-fw;
-      //   color: blue;
-      //  position: absolute;
-      // }
 
       &__image{
         position: relative;
-        // display: flex;
         background-image: url(../assets/images/hero-bio.jpg), linear-gradient(rgba(50,50,50,0.5), rgba(50,50,50,0.5));
         background-blend-mode: overlay;
         background-size: cover;
@@ -128,203 +108,229 @@ body {
         margin-bottom: 0px;
         margin-top: 0px;
         min-width: 100vw;
-        min-height: 328px;
+        min-height: 36vw;
       }
     
       &__image__text{
-        padding-top: 148px;
-        padding-left: 16px;
+        padding-top: 15%;
+        padding-left: 1rem;
         position: relative;
-        font-size: $mobile-page-section-header-ts ;
+        font-size: $mobile-page-section-header-fs ;
         line-height: $mobile-page-section-header-lh ;
         font-weight: 600;
         color: $primary-color-white;
         margin-top: 0px;
-      
-      
+        @include tablet {
+          font-size: $desktab-page-header-fs ;
+          line-height: $desktab-page-header-lh ;
+          font-weight: $desktab-page-header-fw;
+          padding-left: 3rem;
+
+        }
       }
-    
     }
     
- 
-  
-  
-  
-
-  
-  
   
   // HERO ENDS HERE
+  
+
   // ABOUT THE MUSICIANS STARTS HERE
+
 
 .about-the-musicians-container__header {
   color:$primary-color-bandsite-black;
-  padding-left: 16px;
-  font-size: $mobile-page-section-header-ts ;
+  padding-left: 1rem;
+  font-size: $mobile-page-section-header-fs ;
   line-height: $mobile-page-section-header-lh ;
   font-weight: $mobile-page-section-header-fw;
-  margin-top: 20px;
-  margin-bottom: 16px;
-  
-  
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
   @include tablet {
-
+    font-size: $desktab-section-header-fs ;
+    line-height: $desktab-section-header-lh ;
+    font-weight: $desktab-section-header-fw;
+    padding-left: 3rem;
   }
   @include desktop { 
-
+    margin-bottom: 4.125rem;
+    margin-top: 2.75rem;
   }
 }
 
-.about-the-musicians-container{
-
-
-@include tablet {
-
-  }
-@include desktop { 
-
-  } 
+.about-the-musicians{
+  display: grid;
 
   &__photo {
     width: 95%;
-    height: 35%;
+    height: 100%;
     padding-left: 1rem;
-    padding-right: 1rem;
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     @include tablet {
-      padding-left: 36px;
-      padding-right: 36px;
+      display: flex;
+      padding-left: 7.8125rem;
+      width: 72%;
+      align-self: center;
+      justify-content: space-around;
     }
   @include desktop { 
+    width: 85%;
   
     } 
- 
-
   }
 
   &__quote {
-  padding-left: 16px;
+  padding-left: 1rem;
   color: $primary-color-bandsite-black;
-  }
+  @include tablet {
+  padding-left: 7.8125rem;
+  padding-right: 9.5625rem;
+  font-weight:$desktab-subheader-fw;
+  font-size: $desktab-subheader-fs ;
+  line-height:$desktab-subheader-lh ;
+  } 
+
+}
 
   &__quote-author {
-    padding-left: 16px;
+    padding-left: 1rem;
     color: $primary-color-bandsite-black;
+    @include tablet {
+      padding-left: 7.8125rem;
+      font-weight: 600;
+      font-size: $desktab-footer-body-fs;
+      line-height: $desktab-footer-body-lh;
+      padding-bottom: 1rem;
+    }
   }
 
   &__band-name {
-    padding-left: 16px;
+    padding-left: 1rem;
     $mobile-subheader-fw: 600;
+    @include tablet {
+      padding-left: 7.8125rem;
+      margin-bottom: .5rem;
+      font-weight: 700;
+      font-size: $desktab-footer-body-fs;
+      line-height: $desktab-footer-body-lh;
+    } 
   }
 
   &__band-biography{
-    padding-left: 16px;
+    padding-left: 1rem;
     line-height: $mobile-footer-body-lh;
-    font-size: $mobile-footer-body-ts;
+    font-size: $mobile-footer-body-fs;
     font-weight: $mobile-footer-body-fw;
     color: $primary-color-bandsite-black;
     @include tablet {
       display: flex;
-
+      padding-left: 7.8125rem;
+      padding-right: 11.5625rem;
     }
-  @include desktop { 
-  
-    } 
   }
 
-&__paragraph{
-  
-  
+&__paragraph--left{
   @include tablet {
-
-
+    padding-right: 1.25rem;
   }
 @include desktop { 
-
+  font-size: 1.125rem;
   } 
-
-
-
 }
-
+&__paragraph--right{
+  
+@include desktop { 
+  font-size: 1.125rem;
+  } 
 }
+}
+  
+//  ABOUT THE MUSICIANS ENDS HERE
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  // PHOTO GALLERY BEGINS HERE
 
 
 
-  
-  
-  
-  
-  //  ABOUT THE MUSICIANS ENDS HERE
-  // PHOTO GALLARY BEGINS HERE
-.photo-gallary-container__header {
+.photo-gallery__header {
   color:$primary-color-bandsite-black;
-  padding-left: 16px;
-  padding-bottom: 16px;
-  padding-top: 20px;
-  font-size: $mobile-page-section-header-ts ;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1.25rem;
+  font-size: $mobile-page-section-header-fs ;
   line-height: $mobile-page-section-header-lh ;
   font-weight: $mobile-page-section-header-fw;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   margin-bottom: 0px;
   background-color: #FAFAFA;
   @include tablet {
-  
-
+  font-size: $desktab-section-header-fs ;
+  line-height: $desktab-section-header-lh ;
+  font-weight: $desktab-section-header-fw;
+  padding-left: 3rem;
   }
 @include desktop { 
-
+  padding-left: 7%;
   } 
-
 }
 
-.photo-gallary-container {
+
+
+.photo-gallery-container {
   display: flex;
   flex-direction: column;
   background-color: #FAFAFA;
-  width: 100%;
-     
+  width: 100%; 
   @include tablet {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #FAFAFA;
-    padding-left: 28px;
-    padding-right: 28px;
     justify-self: center;
-
-
+    justify-content: center;
+    gap: 1.5rem;
   }
   @include desktop { 
-    width: 30%;
-    margin: 1.25vw 0;
-    background: lightpink;
+    gap: 1.875rem;
+    background: #FAFAFA;
   }
+}
+
+.photo-gallery__item {
+  width: 95%;
+  height: 35%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  margin-bottom: 1rem;
   
-  &__item {
-    width: 95%;
-    height: 35%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: flex;
-    margin-bottom: 16px;
-    
-    @include tablet {
-      width: 25%;
-      margin-top: 16px;
-      padding-left: .5rem;
-      padding-right: .5rem;
-
-    }
-    @include desktop { 
-
-    }
+  @include tablet {
+    width: 28%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-bottom: 0px;
   }
-   
+}
+
+.photo-gallery__item--bottom{
+  @include tablet {
+  margin-bottom: 1.5rem;
+  }
+  @include desktop { 
+    margin-bottom: 3rem;
+  }
 }
 
   
 // PHOTO GALLARY ENDS HERE
+
+
+
 // FOOTER BEGINS HERE
 .social-container {
   @include tablet {
@@ -332,11 +338,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-content: space-evenly;
-
-  }
-  @include desktop { 
-
+    align-items: center;
   }
 }
 
@@ -344,160 +346,148 @@ body {
 
 .footer-container {
   background-color: #323232;
-  
-  @include tablet {
-    
-
-  }
-  @include desktop { 
-
-  }
-
+  position: relative;
   &__contacts {
     @include tablet {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-evenly;
+      justify-content: space-around;
       align-content: space-evenly;
-
     }
     @include desktop { 
-  
-    }
-    
+      padding-left: 5.3125rem;
+      justify-content: flex-start;
+      gap:6vw;
+    } 
   }
+    
+    &__person{
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
 
 
     &__person__name {
       margin-top: 0px;
-      padding-top: 24px;
+      padding-top: 1.5rem;
       margin-bottom: 0px;
-      padding-right: 16px;
-      padding-left: 16px;
       color: $primary-color-white;
       font-weight: $mobile-subheader-fw;
     }
     
-    &__person_buisness{
+    &__person_buisness {
       margin-top: 0px;
-      padding-right: 16px;
-      padding-left: 16px;
       color: $primary-color-white;
       font-weight: $mobile-subheader-fw;
     }
 
-    &__person_address{
-      padding-right: 16px;
-      padding-left: 16px;
+    &__person_address {
       color: $primary-color-white;
       margin-top: 0px;
       margin-bottom: 0px;
     }
     
-    &__person_email{
-      padding-right: 16px;
-      padding-left: 16px;
+    &__person_email {
       color: $primary-color-white
     }
     
     &__copyright-logo__header {
       margin-bottom: 0px;
-      padding-right: 16px;
-      padding-left: 16px;
+      padding-right: 1rem;
+      padding-left: 1rem;
     }
     
 
-    &__contact-header{
-      padding-right: 16px;
-      padding-left: 16px;
-      padding-top: 30px;
+    &__contact-header {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      padding-top: 1.875rem;
       color: $primary-color-white;
       margin-top: 0px;
       @include tablet {
-      padding-left: 36px;
+      padding-left: 2.25rem;
 
       }
       @include desktop { 
-    
+        font-size: $desktab-section-header-fs ;
+        line-height: $desktab-section-header-lh ;
+        font-weight: $desktab-section-header-fw;
+        padding-left: 5vw;
+        padding-top: 3.75rem;
       }
-    
     }
 
-    &__social-logos{
-  
-    }
-
-    &__social-logos--facebook{
-      padding-right: 16px;
-      padding-left: 16px;
+    &__social-logos--facebook {
+      padding-right: 1rem;
+      padding-left: 1rem;
       width: 2.5vw;
       @include tablet {
-        padding-top: 30px;
+        padding-top: 1.875rem;
         width: 1.8vw;
-    
-
       }
       @include desktop { 
-    
+        width: 1.2vw;
       }
-    
     }
-    &__social-logos--twitter{
-      padding-right: 16px;
-      padding-left: 16px;
+    &__social-logos--twitter {
+      padding-right: 1rem;
+      padding-left: 1rem;
       width: 5vw;
       @include tablet {
-        padding-top: 30px;
+        padding-top: 1.875rem;
         width: 3.6vw;
-    
-
       }
       @include desktop { 
-    
+        width: 2.2vw;
       }
     }
-    &__social-logos--instagram{
-      padding-right: 16px;
-      padding-left: 16px;
+    &__social-logos--instagram {
+      padding-right: 1rem;
+      padding-left: 1rem;
       width: 4vw;
       @include tablet {
-        padding-top: 30px;
+        padding-top: 1.875rem;
         width: 3vw;
-    
-
       }
       @include desktop { 
-    
+        width: 1.8vw;
+        padding-left: 2.8125rem;
       }
     }
 
-    &__banner{
-      line-height: $mobile-page-section-header-lh;
-      font-size: 42px;
+    &__banner {
       margin-bottom: 0px;
       margin-top: 64px;
-      font-weight: 200;
-      padding-right: 16px;
-      padding-left: 16px;
-      color: $primary-color-white
-
-    }
-  
-    &__copyright{
-      padding-right: 16px;
-      padding-left: 16px;
-      color: $primary-color-white;
-      padding-bottom: 24px;
+      padding-right: 1rem;
+      padding-left: 1rem;
       @include tablet {
-        padding-left: 36px;
-
+        position: absolute;
+        left: 73%;
+        height: 5vh;
+        width: 16%;
+        top: 10%;
+        margin-top: 0px;
       }
       @include desktop { 
-    
+        height: 5vh;
+        width: 10%;
+        top: 16%;
       }
-    
     }
   
+    &__copyright {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      color: $primary-color-white;
+      padding-bottom: 1.5rem;
+      @include tablet {
+        padding-left: 2.25rem;
+        margin-bottom: 0px;
+      }
+      @include desktop { 
+        padding-left: 5vw;
+      }
+    }
   }
   
