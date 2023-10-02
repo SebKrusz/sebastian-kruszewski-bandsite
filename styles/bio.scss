@@ -2,18 +2,24 @@
 @use './partials/mixins' as *;
 @use './partials/fonts' as *;
 
-
+html { 
+  margin: 0px;
+  padding: 0px;
+ }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     font-family: Avenir ;
     box-sizing: border-box;
+    background-color: #323232;
   }
 
   main {
     box-sizing: border-box;
+    background-color: white;
   }
+
 
   // NAV BAR BEGINS HERE
   .nav__header {
@@ -24,7 +30,6 @@ body {
     color:$primary-color-white;
     @include tablet {
       height: 5.3125rem;
-  
     }
 }
   
@@ -56,8 +61,8 @@ body {
           display: flex;
           justify-content: center;
           @include tablet {
-            padding-top:1.5625rem;
-            padding-bottom: 1.3125rem;
+            padding-top:1.1625rem;
+            padding-bottom: 1.7125rem;
           
           }
         }
@@ -67,7 +72,7 @@ body {
           display: flex;
           justify-content: center;
           @include tablet {
-            padding-top:1.5625rem;
+            padding-top:1.1625rem;
           
           }
         }
@@ -75,18 +80,20 @@ body {
 
         &__site-banner {
           padding-top: 2.1875rem;
-          padding-bottom: 0.9375rem;
-          padding-left: 3rem;
+          padding-bottom: 0.64rem;
           @include tablet {
           align-self: start;
           position: absolute;
-          height: 3%;
-          width: 16%;
+          padding-left: 1rem;
+          padding-right: 1rem;
           margin: 1rem;
           padding-top:1.25rem;
+          left: 3%;
+          width: 15vh;
 
           }
   }
+
 }
 
 // NAV BAR ENDS HERE
@@ -137,7 +144,7 @@ body {
   // ABOUT THE MUSICIANS STARTS HERE
 
 
-.about-the-musicians-container__header {
+.about-the-musicians__header {
   color:$primary-color-bandsite-black;
   padding-left: 1rem;
   font-size: $mobile-page-section-header-fs ;

@@ -12,15 +12,22 @@
   src: url(../assets/fonts/AvenirNextLTPro-Demi.otf);
   font-weight: 600;
 }
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-family: Avenir;
   box-sizing: border-box;
+  background-color: #323232;
 }
 
 main {
   box-sizing: border-box;
+  background-color: white;
 }
 
 .nav__header {
@@ -67,8 +74,8 @@ main {
 }
 @media screen and (min-width: 768px) {
   .nav__options--active {
-    padding-top: 1.5625rem;
-    padding-bottom: 1.3125rem;
+    padding-top: 1.1625rem;
+    padding-bottom: 1.7125rem;
   }
 }
 .nav__options--inactive {
@@ -78,22 +85,23 @@ main {
 }
 @media screen and (min-width: 768px) {
   .nav__options--inactive {
-    padding-top: 1.5625rem;
+    padding-top: 1.1625rem;
   }
 }
 .nav__site-banner {
   padding-top: 2.1875rem;
-  padding-bottom: 0.9375rem;
-  padding-left: 3rem;
+  padding-bottom: 0.64rem;
 }
 @media screen and (min-width: 768px) {
   .nav__site-banner {
     align-self: start;
     position: absolute;
-    height: 3%;
-    width: 16%;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin: 1rem;
     padding-top: 1.25rem;
+    left: 3%;
+    width: 15vh;
   }
 }
 
@@ -128,7 +136,7 @@ main {
   }
 }
 
-.about-the-musicians-container__header {
+.about-the-musicians__header {
   color: #323232;
   padding-left: 1rem;
   font-size: 32px;
@@ -138,7 +146,7 @@ main {
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .about-the-musicians-container__header {
+  .about-the-musicians__header {
     font-size: 43px;
     line-height: 44px;
     font-weight: 700;
@@ -146,7 +154,7 @@ main {
   }
 }
 @media screen and (min-width: 1024px) {
-  .about-the-musicians-container__header {
+  .about-the-musicians__header {
     margin-bottom: 4.125rem;
     margin-top: 2.75rem;
   }
@@ -489,4 +497,4 @@ main {
   .footer__copyright {
     padding-left: 5vw;
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=bio.css.map */
