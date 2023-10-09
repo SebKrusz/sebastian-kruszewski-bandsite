@@ -225,16 +225,6 @@ html {
 // HERO ENDS HERE
 
 
-// @include tablet {
-
-
-//   }
-//   @include desktop { 
-
-//   }
- 
-
-
 // SHOWS SECTION
 
 #mainContent{
@@ -256,10 +246,6 @@ display: inline-flex;
 border-bottom: #afadad solid 2px;
 
   }
-  @include desktop { 
-
-  }  
-
 }
 
 .showDataOne{
@@ -268,10 +254,6 @@ border-bottom: #afadad solid 2px;
   padding-left: 3rem;
 
       }
-      @include desktop { 
-    
-      }  
-
 }
 
 .showDataTwo{
@@ -281,10 +263,6 @@ border-bottom: #afadad solid 2px;
     width: 25%;
 
       }
-      @include desktop { 
-    
-      }  
-
 }
 .showDataThree{
   border-bottom: #afadad solid 2px;
@@ -294,10 +272,6 @@ border-bottom: #afadad solid 2px;
     width: 100px;
     border-bottom: white solid 2px;
   }
-    
-      @include desktop { 
-    
-      }  
 }
 
 .showData--date{
@@ -307,13 +281,6 @@ border-bottom: #afadad solid 2px;
     // font-size:
   margin-top: 0px;
   margin-bottom: 0px;
-  @include tablet {
-
-
-  }
-  @include desktop { 
-
-  }
 
 }
 
@@ -329,9 +296,7 @@ border-bottom: #afadad solid 2px;
 
 
   }
-  @include desktop { 
 
-  }
 }
 
 .showData--location-constant{
@@ -377,10 +342,6 @@ border-bottom: #afadad solid 2px;
   margin-bottom: 0px;
   @include tablet {
     display: none;
-
-  }
-  @include desktop { 
-
   }
 }
 
@@ -394,7 +355,6 @@ position: absolute;
   }
   @include desktop { 
     left: 50%;
-
   }
 }
 
@@ -407,8 +367,6 @@ position: absolute;
         }
         @include desktop { 
           color:#323232;
-
-
         }  
 
 }
@@ -429,9 +387,6 @@ position: absolute;
     padding-top: 1rem;
     
       }
-      @include desktop { 
-    
-      } 
 }
 
 
