@@ -213,7 +213,7 @@ body {
 
   &__band-name {
     padding-left: 1rem;
-    $mobile-subheader-fw: 600;
+    font-weight: $mobile-subheader-fw;
     @include tablet {
       padding-left: 7.8125rem;
       margin-bottom: .5rem;
@@ -312,7 +312,6 @@ body {
   width: 95%;
   height: 35%;
   padding-left: 1rem;
-  padding-right: 1rem;
   display: flex;
   margin-bottom: 1rem;
   
@@ -335,6 +334,236 @@ body {
 
   
 // PHOTO GALLARY ENDS HERE
+
+// J-T-C ( JOIN THE CONVO) BEGINS HERE
+
+
+#yourName{
+  background-color: #dddddd;
+  border: #b8b6b6 1px solid;
+}
+
+#yourComment{
+  background-color: #dddddd;
+  border: #b8b6b6 1px solid;
+}
+
+.j-t-c {
+  display: grid ;
+
+  &__header{
+  color:$primary-color-bandsite-black;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1.25rem;
+  font-size: $mobile-page-section-header-fs ;
+  line-height: $mobile-page-section-header-lh ;
+  font-weight: $mobile-page-section-header-fw;
+  margin-top: 1.25rem;
+  margin-bottom: 0px;
+  background-color: white;
+  @include tablet {
+    padding-left: 3rem;
+    }
+    @include desktop { 
+      padding-left: 7%;
+    }
+
+  }
+
+  &__user-name{
+    display: grid;
+    padding-left: 3.5rem;
+    width:85%;
+    @include tablet {
+      padding-left: 21.2rem;
+      width:45%;
+      }
+      @include desktop { 
+        padding-left: 26rem;
+      }
+    
+  }
+  &__user-name-label{
+    font-weight: $mobile-subheader-fw;
+    color:#636363;
+    font-size: 12px;
+   }
+
+
+  &__user-comment{
+    display: grid;
+    padding-left: 3.5rem;
+    width:85%;
+    @include tablet {
+      padding-left: 21.2rem;
+      width:45%;
+      }
+      @include desktop { 
+        padding-left: 26rem;
+      }
+  }
+  &__user-comment-label{
+    font-weight: $mobile-subheader-fw;
+    font-size: 12px;
+    color:#636363;
+    padding-top: 2rem;
+
+  }
+
+
+&__button{
+  display: grid;
+  align-content: center;
+  width: 85%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 3.5rem;
+  @include tablet {
+    padding-left: 35.2rem;
+    width: 18%;
+    }
+    @include desktop { 
+    left: 17%;
+    position: relative;
+    }
+}
+
+&__button--clickable{
+  background-color: #323232;
+  color: #FAFAFA;
+  height: 4rem;
+  font-weight: 600;
+  font-size: $desktab-footer-body-fs;
+  line-height: $desktab-footer-body-lh;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 4%;
+  @include tablet {
+  height: 2rem;
+  padding-top: .3rem;
+  padding-bottom: .5rem;
+
+  }
+  @include desktop { 
+    
+  }
+}
+
+
+}
+
+.your-info{
+  display: grid;
+}
+
+.your-img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  padding-top: 5px;
+  @include tablet {
+  left:17rem;
+    }
+    @include desktop { 
+      left:22rem;
+
+    }
+  
+
+
+}
+.comment-date{
+  line-height: $mobile-footer-body-lh;
+  font-size: $mobile-footer-body-fs;
+  font-weight: 700;
+  color: $primary-color-bandsite-black;
+  padding-left: 35%;
+
+  @include tablet {
+  
+    padding-left: 62%;
+  
+  }
+
+}
+
+.name-date{
+display: flex;
+}
+
+.comment{
+  padding-top: 20px;
+  @include tablet {
+    width: 50%;
+    padding-left: 17rem;
+
+  
+  }
+  @include desktop { 
+    padding-left: 22rem;
+      }
+
+  }
+
+
+
+
+.comment-name {
+  line-height: $mobile-footer-body-lh;
+  font-size: $mobile-footer-body-fs;
+  font-weight: 700;
+  color: $primary-color-bandsite-black;
+  padding-left: 4.1rem;
+  @include tablet {
+    padding-left: 3.2rem;
+    }
+    @include desktop { 
+      padding-left: 7%;
+    }
+
+
+}
+
+
+.comment-text {
+  padding-left: 4.1rem;
+  line-height: $mobile-footer-body-lh;
+  font-size: $mobile-footer-body-fs;
+  font-weight: $mobile-footer-body-fw;
+  color: $primary-color-bandsite-black;
+  display: flex;
+  padding-bottom: 2.2rem;
+  margin-bottom: 1rem;
+  border-bottom: $primary-color-bandsite-black   3px solid;
+  @include tablet {
+    padding-left: 3.2rem;
+    }
+    @include desktop { 
+      padding-left: 7%;
+    }
+  
+}
+
+.comment-avatar{
+  border-radius: 50%;
+  position: absolute;
+
+}
+
+#nameOne{
+  height: 32px;
+}
+
+// #commentOne{
+//   height:200px;
+
+// }
+
+
+
+// JTC ( JOIN THE CONVO) ENDS HERE
 
 
 
