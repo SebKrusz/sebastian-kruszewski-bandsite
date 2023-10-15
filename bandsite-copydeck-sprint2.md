@@ -102,7 +102,7 @@ Queen of Yellow x For The Stings
 
 
 #### Dates \
-Venue \
+place \
 Location
 
 Mon Sept 06 2021 

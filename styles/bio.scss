@@ -7,13 +7,13 @@ html {
   padding: 0px;
  }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: Avenir ;
-    box-sizing: border-box;
-    background-color: #323232;
-  }
+ body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  background-color: #323232;
+}
 
   main {
     box-sizing: border-box;
@@ -88,8 +88,8 @@ body {
           padding-right: 1rem;
           margin: 1rem;
           padding-top:1.25rem;
-          left: 3%;
-          width: 15vh;
+          left: 0%;
+          width: 13vh;
 
           }
   }
@@ -335,7 +335,7 @@ body {
   
 // PHOTO GALLARY ENDS HERE
 
-// J-T-C ( JOIN THE CONVO) BEGINS HERE
+// commentsection ( JOIN THE CONVO) BEGINS HERE
 
 
 #yourName{
@@ -348,7 +348,7 @@ body {
   border: #b8b6b6 1px solid;
 }
 
-.j-t-c {
+.commentsection {
   display: grid ;
 
   &__header{
@@ -368,7 +368,6 @@ body {
     @include desktop { 
       padding-left: 7%;
     }
-
   }
 
   &__user-name{
@@ -443,11 +442,8 @@ body {
   height: 2rem;
   padding-top: .3rem;
   padding-bottom: .5rem;
-
-  }
-  @include desktop { 
-    
-  }
+  
+}
 }
 
 
@@ -476,17 +472,20 @@ body {
 }
 .comment-date{
   line-height: $mobile-footer-body-lh;
-  font-size: $mobile-footer-body-fs;
+  font-size: 12px;
   font-weight: 700;
   color: $primary-color-bandsite-black;
-  padding-left: 35%;
 
+  color:#807e7e;
+  position: relative;
+  left: 45%;
+  
   @include tablet {
-  
-    padding-left: 62%;
-  
+    left: 55%;
   }
-
+  @include desktop { 
+    left: 75%;
+      }
 }
 
 .name-date{
@@ -494,17 +493,17 @@ display: flex;
 }
 
 .comment{
+  position: relative;
   padding-top: 20px;
+  left: 18%;
+  width: 60%;
   @include tablet {
     width: 50%;
-    padding-left: 17rem;
-
-  
+    left: 17rem;
   }
   @include desktop { 
-    padding-left: 22rem;
+    left: 22rem;
       }
-
   }
 
 
@@ -515,20 +514,12 @@ display: flex;
   font-size: $mobile-footer-body-fs;
   font-weight: 700;
   color: $primary-color-bandsite-black;
-  padding-left: 4.1rem;
   @include tablet {
-    padding-left: 3.2rem;
     }
-    @include desktop { 
-      padding-left: 7%;
-    }
-
-
 }
 
 
 .comment-text {
-  padding-left: 4.1rem;
   line-height: $mobile-footer-body-lh;
   font-size: $mobile-footer-body-fs;
   font-weight: $mobile-footer-body-fw;
@@ -538,28 +529,27 @@ display: flex;
   margin-bottom: 1rem;
   border-bottom: $primary-color-bandsite-black   3px solid;
   @include tablet {
-    padding-left: 3.2rem;
+ padding-left: 0px;
     }
-    @include desktop { 
-      padding-left: 7%;
-    }
-  
 }
 
 .comment-avatar{
   border-radius: 50%;
   position: absolute;
-
+  left: -14%;
+  width: 12%;
+  @include tablet {
+    left: -16%;
+       }
+       @include desktop { 
+     left: -10%;
+     width: 6%;
+       }
 }
 
 #nameOne{
   height: 32px;
 }
-
-// #commentOne{
-//   height:200px;
-
-// }
 
 
 

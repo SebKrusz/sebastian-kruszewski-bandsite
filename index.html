@@ -76,28 +76,27 @@
                     <img class="photo-gallery__item photo-gallery__item--bottom"  src="./assets/images/Photo-gallery-9.jpg" alt="concert-confetti-image">
                 </div>
             </section>
-            <section class="j-t-c">
-                <h2 class="j-t-c__header">Join The Conversation</h2>
-                <form id="j-t-c__myForm">
+            <section class="commentsection">
+                <h2 class="commentsection__header">Join The Conversation</h2>
+                <form id="commentsection__myForm">
                     <img class="your-img" src="./assets/images/Mohan-muruge.jpg">
-                    <div class="j-t-c__user-name">
+                    <div class="commentsection__user-name">
                         <div class="your-info">
-                            <label for="name" class="j-t-c__user-name-label">NAME</label>
+                            <label for="name" class="commentsection__user-name-label">NAME</label>
                             <input type="text" name = 'name' id="yourName" placeholder="What's your name??"></input>
                         </div>
                     </div>
-                    <div class="j-t-c__user-comment">
-                        <label for="comment" class="j-t-c__user-comment-label" >COMMENT</label>
+                    <div class="commentsection__user-comment">
+                        <label for="comment" class="commentsection__user-comment-label" >COMMENT</label>
                         <textarea type="text" name = 'comment' id="yourComment" cols="30" rows="10" placeholder="Add a new comment" ></textarea>
                     </div>
-                    <div class="j-t-c__button">
-                        <button type="submit" class="j-t-c__button--clickable" id="add-comment">COMMENT</button>
+                    <div class="commentsection__button">
+                        <button type="submit" class="commentsection__button--clickable" id="add-comment">COMMENT</button>
                     </div>
                 </form>
-                <div id="comments">
+                <div id="comments-container">
                 </div>
             </section>
-            <script src="./pages/index-page.js"></script>
         </main> 
         <footer class="footer">
             <section class="social-media">
@@ -137,4 +136,7 @@
             <p class="footer__copyright">Copyright The Bees Knees © 2021 All Rights Reserved</p>
         </footer>
     </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="../scripts/band-site-api.js"></script>
+    <script type="module" src="../scripts/index-page.js"></script>
 </html>
