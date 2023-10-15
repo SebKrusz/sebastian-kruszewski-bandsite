@@ -7,6 +7,10 @@ html {
   padding: 0px;
  }
 
+ a{
+  text-decoration: none;
+  color: #FAFAFA;
+ }
  body {
   margin: 0px;
   padding: 0px;
@@ -57,7 +61,7 @@ html {
           padding-bottom: 1rem;
           border-bottom: #FAFAFA 4px solid;
           margin-bottom: 0px;
-          width: 50%;
+          width: 119%;
           display: flex;
           justify-content: center;
           @include tablet {
@@ -68,7 +72,7 @@ html {
         }
 
         &__options--inactive {
-          width: 50%;
+          width: 119%;
           display: flex;
           justify-content: center;
           @include tablet {
@@ -94,6 +98,12 @@ html {
           }
   }
 
+}
+
+.nav__link-multi {
+  width: 119%;
+  display: flex;
+  justify-content: center;
 }
 
 // NAV BAR ENDS HERE
@@ -716,4 +726,11 @@ display: flex;
       }
     }
   }
-  
+  .nav__options--active:hover {
+    font-weight: 400;
+    
+  }
+.nav__options--inactive:hover {
+  color:#d6d4d4 ;
+
+}

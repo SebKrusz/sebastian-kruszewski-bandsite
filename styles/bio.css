@@ -17,6 +17,11 @@ html {
   padding: 0px;
 }
 
+a {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
 body {
   margin: 0px;
   padding: 0px;
@@ -68,7 +73,7 @@ main {
   padding-bottom: 1rem;
   border-bottom: #FAFAFA 4px solid;
   margin-bottom: 0px;
-  width: 50%;
+  width: 119%;
   display: flex;
   justify-content: center;
 }
@@ -79,7 +84,7 @@ main {
   }
 }
 .nav__options--inactive {
-  width: 50%;
+  width: 119%;
   display: flex;
   justify-content: center;
 }
@@ -103,6 +108,12 @@ main {
     left: 0%;
     width: 13vh;
   }
+}
+
+.nav__link-multi {
+  width: 119%;
+  display: flex;
+  justify-content: center;
 }
 
 .hero__image {
@@ -722,4 +733,12 @@ main {
   .footer__copyright {
     padding-left: 5vw;
   }
+}
+
+.nav__options--active:hover {
+  font-weight: 400;
+}
+
+.nav__options--inactive:hover {
+  color: #d6d4d4;
 }/*# sourceMappingURL=bio.css.map */
