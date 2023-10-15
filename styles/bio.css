@@ -74,6 +74,7 @@ main {
   border-bottom: #FAFAFA 4px solid;
   margin-bottom: 0px;
   width: 119%;
+  font-weight: 600;
   display: flex;
   justify-content: center;
 }

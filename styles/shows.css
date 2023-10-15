@@ -75,6 +75,7 @@ main {
   margin-bottom: 0px;
   width: 119%;
   display: flex;
+  font-weight: 600;
   justify-content: center;
 }
 @media screen and (min-width: 768px) {
