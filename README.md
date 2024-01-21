@@ -1,4 +1,4 @@
-# Bandsite Sprint 3 Project
+# Bandsite Project
 
 ## Overview
 
