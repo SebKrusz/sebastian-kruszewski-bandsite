@@ -1,5 +1,8 @@
 # Bandsite Project
 
+### IMAGES:
+https://imgur.com/a/jLp76Ms
+
 ## Overview
 
 In this Project, the task was to create a Bandsite website by integrating live data from the provided API. The focus is on making the site dynamic by replacing hardcoded data with real-time data fetched from the server. The project includes creating a `BandSiteApi` class to handle API interactions, implementing features on the Bio Page for comments, and displaying shows data on the Shows Page.
