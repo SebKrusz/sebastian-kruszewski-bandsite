@@ -60,9 +60,5 @@ Implemented a class named `BandSiteApi` with the following methods:
 - Implemented functionality to send a request to the API to delete a comment.
 - Removed the deleted comment from the UI.
 
-## Project Structure
-
-- Created 3 `sprint` branchs for development.
-- Merged the `sprint-3` branch with `main` before submission.
 
 This sprint represents the completed product, addressing feedback and delivering the requested features. The project demonstrates proficiency in API integration, asynchronous JavaScript, and front-end development principles.
