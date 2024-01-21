@@ -49,8 +49,6 @@ Implemented a class named `BandSiteApi` with the following methods:
 - Utilized Axios for making API HTTP requests.
 - Registered event handlers using `addEventListener`.
 
-## Diving Deeper (Optional Challenges)
-
 ### Comment Like Functionality
 
 - Added a "Like" button to each comment.
@@ -64,4 +62,4 @@ Implemented a class named `BandSiteApi` with the following methods:
 - Removed the deleted comment from the UI.
 
 
-This sprint represents the completed product, addressing feedback and delivering the requested features. The project demonstrates proficiency in API integration, asynchronous JavaScript, and front-end development principles.
+This project represents the completed product, addressing feedback and delivering the requested features. The project demonstrates proficiency in API integration, asynchronous JavaScript, and front-end development principles.
